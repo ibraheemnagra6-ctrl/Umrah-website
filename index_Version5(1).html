@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🕋 Hajj & Umrah Travel</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f9f9f9;
+      color: #222;
+    }
+    header {
+      background: #222;
+      color: #fff;
+      padding: 1.5rem 0 1rem 0;
+      text-align: center;
+      position: relative;
+    }
+    .logo {
+      width: 60px;
+      position: absolute;
+      left: 2rem;
+      top: 1rem;
+    }
+    header nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: 500;
+    }
+    header nav a:hover {
+      text-decoration: underline;
+    }
+    .hero {
+      background: url("https://source.unsplash.com/1200x400/?hajj") center/cover no-repeat;
+      text-align: center;
+      padding: 4rem 2rem;
+      position: relative;
+    }
+    .hero-img {
+      width: 160px;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+      margin-bottom: 1.5rem;
+    }
+    .hero h2,
+    .hero p {
+      color: black;
+    }
+    .section {
+      background: #fff;
+      margin: 2rem auto;
+      max-width: 900px;
+      border-radius: 8px;
+      padding: 2rem 1.5rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: center;
+      margin-top: 1.5rem;
+    }
+    .card {
+      background: #f1f1f1;
+      border-radius: 8px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+      width: 260px;
+      text-align: center;
+      padding-bottom: 0.8rem;
+      transition: transform 0.2s;
+    }
+    .card img {
+      width: 100%;
+      border-radius: 8px 8px 0 0;
+      height: 165px;
+      object-fit: cover;
+    }
+    .card h3 {
+      margin: 0.8rem 0 0.4rem 0;
+      font-size: 1.1rem;
+    }
+    .guides-pics {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      margin-bottom: 1.5rem;
+      flex-wrap: wrap;
+    }
+    .guides-pics img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid #eee;
+      box-shadow: 0 1px 8px rgba(0,0,0,0.10);
+    }
+    ul {
+      line-height: 2;
+      padding-left: 1.5rem;
+    }
+    #budget img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+      box-shadow: 0 1px 6px rgba(0,0,0,0.07);
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    input, textarea {
+      padding: 0.7rem;
+      border: 1px solid #bbb;
+      border-radius: 5px;
+      font-size: 1rem;
+      resize: vertical;
+    }
+    button[type="submit"] {
+      background: #222;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      padding: 0.8rem 0;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    button[type="submit"]:hover {
+      background: #444;
+    }
+    footer {
+      background: #222;
+      color: #fff;
+      text-align: center;
+      padding: 1rem 0;
+      margin-top: 2rem;
+      font-size: 1rem;
+    }
+    @media (max-width: 900px) {
+      .cards {
+        flex-direction: column;
+        align-items: center;
+      }
+      .card {
+        width: 90%;
+      }
+      .guides-pics {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Kaaba_icon.png/120px-Kaaba_icon.png" alt="Logo" class="logo">
+    <h1>🕋 Hajj & Umrah Travel</h1>
+    <nav>
+      <a href="#destinations">Destinations</a>
+      <a href="#vehicles">Vehicles</a>
+      <a href="#guides">Guides</a>
+      <a href="#budget">Budget Trip</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+  <section class="hero">
+    <img src="https://source.unsplash.com/400x200/?pilgrims,holy-mosque" class="hero-img" alt="Pilgrims at Holy Mosque">
+    <h2>Your Spiritual Journey Starts Here</h2>
+    <p>Trusted Hajj & Umrah travel packages, expert guides, and reliable comfort for every pilgrim.</p>
+  </section>
+  <section id="destinations" class="section">
+    <h2>Our Destinations</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" alt="Makkah - Kaaba">
+        <h3>Makkah</h3>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1504196606672-aef5c9cefc92?auto=format&fit=crop&w=600&q=80" alt="Madinah - Prophet's Mosque">
+        <h3>Madinah</h3>
+      </div>
+      <div class="card">
+        <img src="https://source.unsplash.com/300x200/?jeddah-corniche" alt="Jeddah Corniche">
+        <h3>Jeddah</h3>
+      </div>
+    </div>
+  </section>
+  <section id="vehicles" class="section">
+    <h2>Vehicle Rentals</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1511918984145-48de785d4c4e?auto=format&fit=crop&w=600&q=80" alt="Van">
+        <h3>Private Vans</h3>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1519638399535-1b036603ac77?auto=format&fit=crop&w=600&q=80" alt="Sedan">
+        <h3>Private Sedans</h3>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1509228468518-c3d6b7c8d43e?auto=format&fit=crop&w=600&q=80" alt="Bus">
+        <h3>Tour Buses</h3>
+      </div>
+    </div>
+  </section>
+  <section id="guides" class="section">
+    <h2>Professional Guides</h2>
+    <div class="guides-pics">
+      <img src="https://source.unsplash.com/120x120/?arabic,guide" alt="Arabic Guide">
+      <img src="https://source.unsplash.com/120x120/?english,guide" alt="English Guide">
+      <img src="https://source.unsplash.com/120x120/?umrah,guide" alt="Urdu Guide">
+    </div>
+    <ul>
+      <li>✔️ Arabic, English, Urdu guides</li>
+      <li>✔️ Assistance in Makka & Madinah</li>
+      <li>✔️ History, rituals, and local information</li>
+    </ul>
+  </section>
+  <section id="budget" class="section">
+    <h2>Budget Trip Offer</h2>
+    <img src="https://source.unsplash.com/400x250/?pilgrimage,budget" alt="Budget Trip">
+    <p>Experience a spiritual journey without breaking the bank! Our 15-day economy package includes:</p>
+    <ul>
+      <li>Stays near Haram in 3-star hotels</li>
+      <li>Round-trip flight, visa, and travel insurance</li>
+      <li>Buffet meals, shuttle transport, and sightseeing</li>
+      <li>Free Zamzam water and pilgrim kit</li>
+    </ul>
+    <p><strong>Price:</strong> PKR 92,999 per person (based on recent offers)</p>
+  </section>
+  <section id="contact" class="section">
+    <h2>Contact Us</h2>
+    <img src="https://source.unsplash.com/300x100/?customer,service,helpdesk" alt="Contact Helpdesk" style="display:block;margin:0 auto 1rem auto;border-radius:8px;">
+    <form>
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Email Address" required>
+      <textarea placeholder="Your Inquiry" required></textarea>
+      <button type="submit">Send Inquiry</button>
+    </form>
+  </section>
+  <footer>
+    <p>© 2025 Hajj & Umrah Travel Co.</p>
+  </footer>
+</body>
+</html>
